@@ -20,6 +20,7 @@ namespace OstManSysMVVM.ViewModel
 
         public Apartment NewApartment
         {
+
             get { return _newApartment; }
             set
             {
