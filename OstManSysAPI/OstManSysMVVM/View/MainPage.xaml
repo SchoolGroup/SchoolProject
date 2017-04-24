@@ -7,18 +7,22 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
     xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:vm="using:OstManSysMVVM.ViewModel"
     mc:Ignorable="d">
-
+<Page.DataContext>
+    <vm:ResidentViewModel></vm:ResidentViewModel>
+</Page.DataContext>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Width="200">
             <TextBlock Text="User ID"></TextBlock>
-            <TextBox Text=""></TextBox>
+            <TextBox Text="{Binding Account.ResidentID,Mode=TwoWay}"></TextBox>
             </StackPanel>
             <StackPanel>
             <TextBlock Text="Password"></TextBlock>
-            <TextBox Text=""></TextBox>
+            <TextBox Text="{Binding Account.Password,Mode=TwoWay}"></TextBox>
             </StackPanel>
+            <Button Command="{Binding LogInCommand,Mode=TwoWay}">Log In</Button>
         </StackPanel>
         <Button x:Name="button" Content="Resident" HorizontalAlignment="Left" Margin="484,325,0,0" VerticalAlignment="Top">
             <interactivity:Interaction.Behaviors>

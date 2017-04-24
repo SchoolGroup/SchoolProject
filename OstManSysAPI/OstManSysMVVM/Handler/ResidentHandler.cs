@@ -25,8 +25,8 @@ namespace OstManSysMVVM.Handler
             resident.LastName = ResidentViewModel.NewResident.LastName;
             resident.EmailAddress = ResidentViewModel.NewResident.EmailAddress;
             resident.PhoneNumber = ResidentViewModel.NewResident.PhoneNumber;
-            resident.ApartmentID = ResidentViewModel.NewResident.ApartmentID;
-            resident.IsBoardMember = ResidentViewModel.NewResident.IsBoardMember;
+           // resident.ApartmentID = ResidentViewModel.NewResident.ApartmentID;
+            //resident.IsBoardMember = ResidentViewModel.NewResident.IsBoardMember;
             new PersistencyFacade().SaveResident(resident);
             var residents = new PersistencyFacade().GetResidents();
             ResidentViewModel.ResidentCatalogSingleton.Residents.Clear();
@@ -40,8 +40,8 @@ namespace OstManSysMVVM.Handler
             ResidentViewModel.NewResident.LastName = "";
             ResidentViewModel.NewResident.EmailAddress="";
             ResidentViewModel.NewResident.PhoneNumber=0;
-            ResidentViewModel.NewResident.ApartmentID=0;
-            ResidentViewModel.NewResident.IsBoardMember=false;
+           // ResidentViewModel.NewResident.ApartmentID=0;
+            //ResidentViewModel.NewResident.IsBoardMember=false;
         }
 
         public void DeleteResident()
@@ -59,8 +59,8 @@ namespace OstManSysMVVM.Handler
             ResidentViewModel.NewResident.LastName = "";
             ResidentViewModel.NewResident.EmailAddress = "";
             ResidentViewModel.NewResident.PhoneNumber = 0;
-            ResidentViewModel.NewResident.ApartmentID = 0;
-            ResidentViewModel.NewResident.IsBoardMember = false;
+           // ResidentViewModel.NewResident.ApartmentID = 0;
+            //ResidentViewModel.NewResident.IsBoardMember = false;
         }
 
         public void UpdateResident()
@@ -71,8 +71,8 @@ namespace OstManSysMVVM.Handler
             resident.LastName = ResidentViewModel.NewResident.LastName;
             resident.EmailAddress = ResidentViewModel.NewResident.EmailAddress;
             resident.PhoneNumber = ResidentViewModel.NewResident.PhoneNumber;
-            resident.ApartmentID = ResidentViewModel.NewResident.ApartmentID;
-            resident.IsBoardMember = ResidentViewModel.NewResident.IsBoardMember;
+          //  resident.ApartmentID = ResidentViewModel.NewResident.ApartmentID;
+           // resident.IsBoardMember = ResidentViewModel.NewResident.IsBoardMember;
             new PersistencyFacade().UpdateResident(resident);
             var residents = new PersistencyFacade().GetResidents();
             ResidentViewModel.ResidentCatalogSingleton.Residents.Clear();
@@ -86,8 +86,8 @@ namespace OstManSysMVVM.Handler
             ResidentViewModel.NewResident.LastName = "";
             ResidentViewModel.NewResident.EmailAddress = "";
             ResidentViewModel.NewResident.PhoneNumber = 0;
-            ResidentViewModel.NewResident.ApartmentID = 0;
-            ResidentViewModel.NewResident.IsBoardMember = false;
+           // ResidentViewModel.NewResident.ApartmentID = 0;
+            //ResidentViewModel.NewResident.IsBoardMember = false;
         }
     }
 }

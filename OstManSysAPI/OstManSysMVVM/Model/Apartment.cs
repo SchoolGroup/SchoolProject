@@ -14,6 +14,8 @@ namespace OstManSysMVVM.Model
         public int NumberOfRooms { get; set; }
         public double MonthlyRent { get; set; }
         public string Condition { get; set; }
+        public bool IsRented { get; set; }
+        public DateTime LastCheck { get; set; }
 
         public Apartment()
         {

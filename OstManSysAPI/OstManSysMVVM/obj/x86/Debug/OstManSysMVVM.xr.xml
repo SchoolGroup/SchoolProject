@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="LogInCommand" />
+    <RootPropertyPathName Name="Account" />
+    <RootPropertyPathName Name="Password" />
+    <RootPropertyPathName Name="ResidentID" />
     <RootPropertyPathName Name="ApartmentCatalogSingleton" />
     <RootPropertyPathName Name="Apartments" />
     <RootPropertyPathName Name="CurrentResident" />
@@ -12,8 +16,10 @@
       <RootProperty Name="RequestedTheme" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="OstManSysMVVM.ViewModel.ResidentViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
@@ -39,6 +45,7 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Command" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />
@@ -55,6 +62,9 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactions.Core.NavigateToPageAction">
       <RootProperty Name="TargetPage" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
@@ -96,9 +106,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Padding" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="OstManSysMVVM.ViewModel.ApartmentViewModel" />
-    <RootType FullName="OstManSysMVVM.ViewModel.ResidentViewModel" />
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
