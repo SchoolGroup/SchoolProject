@@ -13,9 +13,8 @@ namespace OstManSysMVVM.Model
         public string LastName { get; set; }
         public long PhoneNumber { get; set; }
         public string EmailAddress { get; set; }
-        public bool IsBoardMember { get; set; }
-        public int ApartmentID { get; set; }
-
+        public DateTime DateOfBirth { get; set; }
+        public enum Type {Resident,BoardMemeber }
         public Resident()
         {
             

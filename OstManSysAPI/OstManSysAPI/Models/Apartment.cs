@@ -12,7 +12,8 @@ namespace OstManSysAPI.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Apartment()
         {
-            Residents = new HashSet<Resident>();
+            Contracts = new HashSet<Contract>();
+            Problems = new HashSet<Problem>();
         }
 
         public int ApartmentID { get; set; }
@@ -25,13 +26,22 @@ namespace OstManSysAPI.Models
 
         public int NumberOfRooms { get; set; }
 
-        public int MonthlyRent { get; set; }
+        [Column(TypeName = "money")]
+        public decimal MonthlyRent { get; set; }
 
         [Required]
         [StringLength(250)]
         public string Condition { get; set; }
 
+        public bool IsRented { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime LastCheck { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Resident> Residents { get; set; }
+        public virtual ICollection<Contract> Contracts { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Problem> Problems { get; set; }
     }
 }

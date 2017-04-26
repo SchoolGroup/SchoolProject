@@ -48,6 +48,29 @@ namespace OstManSysMVVM.Persistency
             }
         }
 
+        public List<Account> GetAccounts()
+        {
+            using (var client= new HttpClient(handler))
+            {
+                client.BaseAddress=new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync("api/Accounts").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var accounts = response.Content.ReadAsAsync<IEnumerable<Account>>().Result;
+                        return accounts.ToList();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    new MessageDialog(ex.Message).ShowAsync();
+                }
+                return null;
+            }
+        }
         public List<Resident> GetResidents()
         {
             using (var client = new HttpClient(handler))

@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b902073b-f637-4649-a761-b4599666ec94</PackageIdentityName>
     <PackageIdentityPublisher>CN=Universe</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-24T08:01:31.816</Modified>
+      <Modified>2017-04-24T12:31:05.203</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\bin\x86\Debug\OstManSysMVVM.exe">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\bin\x86\Debug\OstManSysMVVM.exe">
       <PackagePath>entrypoint\OstManSysMVVM.exe</PackagePath>
-      <Modified>2017-04-24T08:01:31.031</Modified>
+      <Modified>2017-04-24T12:31:04.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Universe\.nuget\packages\Microsoft.AspNet.WebApi.Client\5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\System.Net.Http.Formatting.dll">
       <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
@@ -472,60 +472,60 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T20:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-04-19T11:47:32.865</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T15:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\bin\x86\Debug\OstManSysMVVM.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\bin\x86\Debug\OstManSysMVVM.xr.xml">
       <PackagePath>OstManSysMVVM.xr.xml</PackagePath>
-      <Modified>2017-04-24T07:48:29.789</Modified>
+      <Modified>2017-04-24T12:27:39.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-01-23T20:05:12.830</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-24T08:01:31.546</Modified>
+      <Modified>2017-04-24T12:27:40.009</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Universe\Documents\Visual Studio 2015\Projects\OstManSysAPI\OstManSysMVVM\bin\x86\Debug\Core\OstManSysMVVM.exe">
+    <AppxPackagedFile Include="C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\bin\x86\Debug\Core\OstManSysMVVM.exe">
       <PackagePath>OstManSysMVVM.exe</PackagePath>
-      <Modified>2017-04-24T08:01:31.787</Modified>
+      <Modified>2017-04-24T12:31:05.188</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

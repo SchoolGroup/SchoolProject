@@ -97,7 +97,12 @@
     </Compile>
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Handler\ApartmentHandler.cs" />
+    <Compile Include="Handler\LogInHandler.cs" />
     <Compile Include="Handler\ResidentHandler.cs" />
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\AccountCatalogSingleton.cs" />
+    <Compile Include="Model\Contract.cs" />
+    <Compile Include="Model\Problem.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

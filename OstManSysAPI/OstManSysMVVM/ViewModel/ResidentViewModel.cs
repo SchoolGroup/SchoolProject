@@ -18,6 +18,17 @@ namespace OstManSysMVVM.ViewModel
         private Resident _newResident;
         private Resident _selectedResident;
         private Resident _currentResident;
+        private Account _account;
+
+        public Account Account
+        {
+            get { return _account; }
+            set
+            {
+                _account = value;
+                OnPropertyChanged(nameof(Account));
+            }
+        }
 
         public Resident CurrentResident
         {
@@ -49,21 +60,29 @@ namespace OstManSysMVVM.ViewModel
             }
         }
 
+        public AccountCatalogSingleton AccountCatalogSingleton { get; set; }
         public ResidentCatalogSingleton ResidentCatalogSingleton { get; set; }
         public Handler.ResidentHandler ResidentHandler { get; set; }
+        public LogInHandler LogInHandler { get; set; }
         public ICommand CreateCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
         public ICommand UpdateCommand { get; set; }
+        public ICommand LogInCommand { get; set; }
         public ResidentViewModel()
         {
             ResidentCatalogSingleton = ResidentCatalogSingleton.Instance;
             ResidentHandler=new Handler.ResidentHandler(this);
+            LogInHandler = new LogInHandler(this);
             NewResident = new Resident();
             SelectedResident=new Resident();
-            CurrentResident = new Resident() {ApartmentID = 2,EmailAddress = "sadasd@asdasd.com",FirstName = "Michael",LastName = "Bech", IsBoardMember = true,PhoneNumber =02546878,ResidentID = 1};
+            AccountCatalogSingleton = AccountCatalogSingleton.Instance;
+            CurrentResident= new Resident();
+            Account = new Account();
+            //CurrentResident = new Resident() {ApartmentID = 2,EmailAddress = "sadasd@asdasd.com",FirstName = "Michael",LastName = "Bech", IsBoardMember = true,PhoneNumber =02546878,ResidentID = 1};
             CreateCommand = new RelayCommand(ResidentHandler.CreateResident);
             DeleteCommand = new RelayCommand(ResidentHandler.DeleteResident);
             UpdateCommand=new RelayCommand(ResidentHandler.UpdateResident);
+            LogInCommand=new RelayCommand(LogInHandler.CheckAccount);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
