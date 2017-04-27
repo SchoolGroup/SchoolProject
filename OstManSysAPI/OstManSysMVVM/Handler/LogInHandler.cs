@@ -30,6 +30,8 @@ namespace OstManSysMVVM.Handler
                     if (data1.ElementAt(s).Equals(ResidentViewModel.Account.Password))
                     {
                        
+
+
                     }
                 }
                 else
