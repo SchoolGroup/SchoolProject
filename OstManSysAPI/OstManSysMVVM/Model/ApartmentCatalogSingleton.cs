@@ -8,13 +8,28 @@ using OstManSysMVVM.Persistency;
 
 namespace OstManSysMVVM.Model
 {
-    class ApartmentCatalogSingleton
+    public class ApartmentCatalogSingleton
     {
-        private static ApartmentCatalogSingleton _instance = new ApartmentCatalogSingleton();
+        private static ApartmentCatalogSingleton _instance = null;
 
+        //public ApartmentCatalogSingleton GetInstance()
+        //{
+        //    if (_instance==null)
+        //    {
+        //        _instance = new ApartmentCatalogSingleton();
+        //    }
+        //    return _instance;
+        //}
         public static ApartmentCatalogSingleton Instance
         {
-            get { return _instance; }
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new ApartmentCatalogSingleton();
+                }
+                return _instance;
+            }
         }
 
         public ObservableCollection<Apartment> Apartments { get; set; }

@@ -422,3 +422,5 @@ C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\obj\
 C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\obj\x86\Debug\Microsoft.Xaml.Interactions.pri.xml
 C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.CommonWebApiResources.resw
+C:\Users\Universe\Documents\GitHub\SchoolProject\OstManSysAPI\OstManSysMVVM\obj\x86\Debug\System.Net.Http.Formatting\en-US\System.Net.Http.Properties.Resources.resw
