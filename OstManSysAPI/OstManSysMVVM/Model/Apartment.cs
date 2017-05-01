@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OstManSysMVVM.Model
 {
-    class Apartment
+    public class Apartment
     {
         public int ApartmentID { get; set; }
         public string Address { get; set; }
