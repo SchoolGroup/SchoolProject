@@ -14,7 +14,8 @@ namespace OstManSysMVVM.Model
         public long PhoneNumber { get; set; }
         public string EmailAddress { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public enum Type {Resident,BoardMemeber }
+        public string Type { get; set; }
+        public enum Type1 {Resident,BoardMemeber }
         public Resident()
         {
             
