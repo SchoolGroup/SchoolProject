@@ -71,6 +71,30 @@ namespace OstManSysMVVM.Persistency
                 return null;
             }
         }
+
+        public Resident GetResident(Account resident)
+        {
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress=new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync("api/Residents/" + resident.ResidentID).Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var resident1 = response.Content.ReadAsAsync<Resident>().Result;
+                        return resident1;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    new MessageDialog(ex.Message).ShowAsync();
+                }
+                return null;
+            }
+        }
         public List<Resident> GetResidents()
         {
             using (var client = new HttpClient(handler))
